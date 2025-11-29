@@ -16,13 +16,11 @@ project-root/
 ├── funcs/        # Functions 
 ├── train/        # Raw GNSS measurement data
 ├── ...
-carrier-smoothing-robust-wls-kalman-smoother_single.py
+GNSS-INS-MAG-processing.py
 rl_control_KFcustom_lospos.py
-rl_control_KFcustom_losposconv_V4multi.py
-...
-```
-1) [WLS+KF（carrier-smoothing-robust-wls-kalman-smoother_single.py）](./carrier-smoothing-robust-wls-kalman-smoother_single.py)
-   > Processing the raw GNSS measurement dataset.
+
+1) [GNSS/INS/MAG baseline model（GNSS-INS-MAG-processing.py）](./GNSS-INS-MAG-processing.py)
+   > Generate the raw GNSS/INS/MAG results and process GNSS data.
 2) [DRL-AMTKF (rl_control_KFcustom_lospos.py)](./rl_control_KFcustom_lospos.py)
    > Adaptive measurement/process noise mitigation and covariance tuning by a single agent.
 2) [MADRL-AMTKF (rl_control_KFcustom_losposconv_V4multi.py)](./rl_control_KFcustom_losposconv_V4multi.py)
